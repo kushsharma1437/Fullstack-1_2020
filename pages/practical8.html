@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical-8</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        #container {
+            position: absolute;
+        }
+        
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        ul li {
+            margin-right: 30px;
+            display: inline-block;
+        }
+        
+        ul li a {
+            display: inline-block;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            margin-top: 10px;
+            margin-right: 30px;
+            padding-right: 10px;
+            color: white;
+        }
+        
+        ul li a:hover {
+            background-color: white;
+            color: black;
+        }
+        
+        #header {
+            width: 100%;
+            height: 50px;
+            background-color: grey;
+            color: white;
+            margin: 0;
+            border-radius: 15px;
+            position: fixed;
+        }
+        
+        #banner {
+            width: 100vw;
+            height: 100vh;
+            font-size: 30px;
+            margin: 20px 5px;
+            border-radius: 15px;
+        }
+        
+        #banner h1 {
+            position: absolute;
+            top: 100px;
+        }
+        
+        #banner img {
+            width: 100vw;
+            height: 100vh;
+        }
+        
+        #c1 {
+            margin: 50px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        
+        #c1 img {
+            border-radius: 50%;
+        }
+        
+        #section2::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        #section2 {
+            margin-top: 25px;
+            margin-bottom: 30px;
+        }
+        
+        #left {
+            display: block;
+            width: 50%;
+            height: 450px;
+            background-color: gray;
+            color: white;
+            float: left;
+            border-radius: 15px;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+        }
+        
+        #right {
+            width: 48%;
+            float: right;
+            position: relative;
+        }
+        
+        #a1 {
+            width: 100%;
+            height: 150px;
+        }
+        
+        #a2 {
+            width: 100%;
+            height: 140px;
+            margin-top: 10px;
+        }
+        
+        #a3 {
+            width: 100%;
+            height: 140px;
+            margin-top: 10px;
+        }
+        
+        #a1 h2 {
+            position: absolute;
+            left: 250px;
+        }
+        
+        #a2 h2 {
+            position: absolute;
+            left: 250px;
+        }
+        
+        #a3 h2 {
+            position: absolute;
+            left: 250px;
+        }
+        
+        #a1 img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        #a2 img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        #a3 img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        #d1 {
+            width: 200px;
+            height: 170px;
+            margin: 50px;
+            display: inline-block;
+        }
+        
+        #section3 {
+            margin-top: 25px;
+        }
+        
+        #section4 {
+            width: 100%;
+            height: 100px;
+            background-color: pink;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+        }
+        
+        .container1 {
+            border-radius: 15px;
+            float: left;
+            margin: 25px 25px;
+            width: 260px;
+            height: 400px;
+            background-color: lightgray;
+        }
+        
+        .container1 img {
+            border-radius: 10px;
+            width: 100%;
+            float: left;
+        }
+        
+        .para {
+            text-align: justify;
+            margin: 20px;
+        }
+        
+        .button {
+            border-radius: 10px;
+            padding-top: 10px;
+            margin: 20px auto;
+            display: block;
+            text-align: center;
+            width: 230px;
+            height: 25px;
+            color: white;
+            background-color: red;
+            text-decoration: none;
+            clear: both;
+        }
+        
+        a:hover {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <ul>
+                <li>
+                    <a href="#">HOME</a>
+                </li>
+                <li>
+                    <a href="#About">ABOUT US</a>
+                </li>
+                <li>
+                    <a href="#teammember">TEAM</a>
+                </li>
+                <li>
+                    <a href="#technologies">TECHNOLOGIES</a>
+                </li>
+                <li>
+                    <a href="#contact">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+        <a name="top"></a>
+        <div id="banner">
+            <h1>PRACTICAL-8</h1>
+            <img src="../image/back8.jpg" alt="">
+            <a name="teammember"></a>
+
+        </div>
+        <h1 style="text-align: center; margin-top: 50px; ">Team Members</h1>
+        <div id="circles">
+            <div id="c1"><img src="../image/1.png" alt=""></div>
+            <div id="c1"><img src="../image/2.png" alt=""></div>
+            <div id="c1"><img src="../image/3.png" alt=""></div>
+            <div id="c1"><img src="../image/4.png" alt=""></div>
+        </div>
+        <a name="About"></a>
+        <h1 style="text-align: center;">About Us</h1>
+        <div id="section2">
+            <div id="left">
+                <h2>About Project</h2>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus mollitia assumenda deleniti ad reprehenderit accusamus dolore, cumque dignissimos labore corporis rerum. Quam doloribus libero perspiciatis totam nihil, et aspernatur ut
+                    repudiandae placeat alias quae illum. Voluptatum quidem et perferendis illo est natus eaque, eligendi explicabo dolor consequatur corporis ad tempore ratione repudiandae eos laborum quis quo enim pariatur. Amet illum nemo ab sed, quas
+                    minima perferendis unde recusandae sint nihil autem veritatis et placeat ipsa. Ipsam, atque facilis. Iste dolorum eaque dolor eum perspiciatis libero consectetur consequuntur necessitatibus nesciunt? Eos quisquam praesentium ullam
+                    exercitationem ex? Cumque dolorem, facilis odio consectetur animi eaque ipsum dolorum dolore. Consequuntur veritatis assumenda debitis tempore illo facere similique voluptate vitae consectetur sapiente ipsam, odit, cumque sunt autem
+                    natus magnam? Aliquam similique nam quod unde vitae, aperiam error quis culpa, ullam odio, quibusdam eligendi! Ab error fugiat repellendus sequi omnis ipsa culpa pariatur, doloremque enim officia molestias dolore. Eveniet possimus
+                    dolorum sapiente, quas a, mollitia eligendi sed nisi soluta error iusto nobis. Repellendus sapiente voluptatibus accusantium!Aliquam similique nam quod unde vitae, aperiam error quis culpa, ullam odio, quibusdam eligendi! Ab error
+                    fugiat repellendus sequi omnis ipsa culpa pariatur, doloremque enim officia molestias dolore. Eveniet possimus dolorum sapiente, quas a, mollitia eligendi sed nisi soluta error iusto nobis. Repellendus sapiente voluptatibus accusantium!</p>
+            </div>
+            <div id="right">
+                <div id="a1">
+                    <h2>Project-1</h2> <img src="../image/p1.jpg" alt=""></div>
+                <div id="a2">
+                    <h2>Project-2</h2><img src="../image/p3.jpeg" alt=""></div>
+                <div id="a3">
+                    <h2>Project-3</h2><img src="../image/p2 .jpg" alt=""></div>
+            </div>
+        </div>
+        <a name="technologies"></a>
+        <h1 style="text-align: center;">
+            Technologies Used
+        </h1>
+        <div id="section3">
+            <div class="container1">
+                <img class="box" src="../image/html.png" alt="">
+                <h4 style="text-align: center;">Introduction to HTML</h4>
+                <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore excepturi impedit maiores incidunt ad mollitia quisquam ratione officia dignissimos quos!</p>
+                <a class="button" href="practical5-html.html">Read More</a>
+            </div>
+            <div class="container1">
+                <img class="box" src="../image/css.png" alt="">
+                <h4 style="text-align: center;">Introduction to CSS</h4>
+                <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore excepturi impedit maiores incidunt ad mollitia quisquam ratione officia dignissimos quos!</p>
+                <a class="button" href="practical5-css.html">Read More</a>
+            </div>
+            <div class="container1">
+                <img src="../image/js.jpg" alt="">
+                <h4 style="text-align: center;">Introduction to JavaScript</h4>
+                <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore excepturi impedit maiores incidunt ad mollitia quisquam ratione officia dignissimos quos!</p>
+                <a class="button" href="practical5-js.html">Read More</a>
+            </div>
+            <div class="container1">
+                <img src="../image/bootstrap.png" alt="">
+                <h4 style="text-align: center;">Introduction to Bootstrap</h4>
+                <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore excepturi impedit maiores incidunt ad mollitia quisquam ratione officia dignissimos quos!</p>
+                <a class="button" href="practical5-bootstrap.html">Read More</a>
+            </div>
+
+        </div>
+        <a name="contact"></a>
+        <h1 style="text-align: center;">CONTACT</h1>
+        <div id="section4">
+            <p>
+                Website Template for Practical-9 &copy;
+                <a href="https://beta-labs.in">Beta-labs</a><br /><br />
+                <a href="#top">Back to top</a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
