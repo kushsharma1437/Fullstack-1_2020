@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-image: url(../image/finalprac.jpg);
+        }
+        
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            width: 100px;
+            height: 40px;
+            justify-content: center;
+        }
+        
+        a:hover {
+            color: white;
+            background-color: skyblue;
+            border-radius: 10px;
+        }
+        
+        .right {
+            width: 60%;
+            height: 100%;
+            font-size: 20px;
+        }
+        
+        .left {
+            width: 100px;
+            height: 30px;
+        }
+        
+        .parent {
+            margin-top: 30px;
+            margin-left: 100px;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="left" style="color: whitesmoke; font-size: 30px;">
+            Browse
+        </div>
+        <div class="right">
+            <a href="# " style="margin-right: 30px;">Home</span></a>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="position: relative;">
+                Dropdown
+            </a>
+            <a href="#" style="margin-right: 30px;">Listing</a>
+            <a href="#" style="margin-right: 30px;">About</a>
+            <a href="#" style="margin-right: 30px;">Blog</a>
+        </div>
+    </div>
+    <div style="justify-content: center; display: flex; margin-top: 100px;">
+        <p style="color: white; display: inline-block; font-size: 70px;">Find Neverby <span style="color: skyblue ; border-radius: 10px;">Events</span><span style="color: white;">  </span></p>
+    </div>
+    <div style="display: flex; justify-content: center; color: white; font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis iste <br>consequuntur minus tenetur maiores exercitationem at sit perferendis impedit? Culpa.<br></div>
+    <br>
+    <div style="justify-content:center; display: flex;">
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="What are you looking for?" placeholder="What are you looking for?                                     Location                      All Categories" aria-label="Search" style="width: 600px; height: 50px;">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style=" border-radius: 10px; width:100px; height: 30px; background-color: teal; color: white;">Search</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
